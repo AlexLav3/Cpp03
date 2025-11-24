@@ -2,7 +2,7 @@ NAME = ClapTrap
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra
 
-SOURCES = main.cpp 
+SOURCES = main.cpp ClapTrap.cpp
 		
 OBJECTS = $(SOURCES:.cpp=.o)
 
