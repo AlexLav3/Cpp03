@@ -4,10 +4,11 @@
 
 int main()
 {
-   // ClapTrap clap("joker");
+    ClapTrap clap("joker");
 
-   // ScavTrap Scav("pops");
+    ScavTrap Scav("pops");
     FragTrap Frag("Froggie");
-
+    Frag.highFivesGuys();
+    Frag.attack("pops");
     return 0;
 }

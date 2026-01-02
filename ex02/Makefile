@@ -1,6 +1,6 @@
 NAME = FragTrap
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra -Wshadow 
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SOURCES = main.cpp ClapTrap.cpp Scavtrap.cpp FragTrap.cpp
 		

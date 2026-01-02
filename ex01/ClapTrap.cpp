@@ -29,14 +29,28 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other){
 	return (*this);
 }
 
+const char *ClapTrap::typeName() const
+{
+    return "ClapTrap";
+}
+
 void ClapTrap::attack(const std::string &target){
     if(this->hitPoints == 0 || this->energyPoints == 0){
-        std::cout << "Claptrap " << this->name << " has no hit points left :(" << std::endl;
+        std::cout << typeName() << " "<< this->name << " has no hit points left :(" << std::endl;
         return ; 
     }
     this->energyPoints -= 1;
-    std::cout << "ClapTrap " << this->name << " attacks " << target << ", causing " << this->attackDmg << " points of damage!" << std::endl;
+    std::cout << typeName() << " " << this->name << " attacks " << target << ", causing " << this->attackDmg << " points of damage!" << std::endl;
 }
+
+// void ClapTrap::attack(const std::string &target){
+//     if(this->hitPoints == 0 || this->energyPoints == 0){
+//         std::cout << "Claptrap " << this->name << " has no hit points left :(" << std::endl;
+//         return ; 
+//     }
+//     this->energyPoints -= 1;
+//     std::cout << "ClapTrap " << this->name << " attacks " << target << ", causing " << this->attackDmg << " points of damage!" << std::endl;
+// }
 
 void ClapTrap::takeDamage(unsigned int amount){
     this->hitPoints -= amount; 

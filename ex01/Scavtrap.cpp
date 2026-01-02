@@ -25,7 +25,22 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 	return (*this);
 }
 
+const char* ScavTrap::typeName() const
+{
+	return "ScavTrap";
+}
+
 void	ScavTrap::guardGate()
 {
 	std::cout << this->name << " ScavTrap is now in Gate keeper mode" << std::endl;
 }
+
+// void ScavTrap::attack(const std::string &target)
+// {
+// 	if(this->hitPoints == 0 || this->energyPoints == 0){
+//         std::cout << "ScavTrap " << this->name << " has no hit points left :(" << std::endl;
+//         return ; 
+//     }
+//     this->energyPoints -= 1;
+//     std::cout << "ScavTrap " << this->name << " attacks " << target << ", causing " << this->attackDmg << " points of damage!" << std::endl;
+// }

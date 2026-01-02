@@ -30,7 +30,23 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
 	return (*this);
 }
 
+
+const char* FragTrap::typeName() const
+{
+	return "FragTrap";
+}
+
 void FragTrap::highFivesGuys()
 {
     std::cout << this->name << " Wants to high five!" << std::endl;
 }
+
+// void FragTrap::attack(const std::string &target)
+// {
+// 	if(this->hitPoints == 0 || this->energyPoints == 0){
+//         std::cout << "FragTrap " << this->name << " has no hit points left :(" << std::endl;
+//         return ; 
+//     }
+//     this->energyPoints -= 1;
+//     std::cout << "FragTrap " << this->name << " attacks " << target << ", causing " << this->attackDmg << " points of damage!" << std::endl;
+// }

@@ -3,12 +3,6 @@
 #include <string>
 #include <cctype> 
 
-/* private: 
-Name, which is passed as a parameter to the constructor
-• Hit points (10), representing the health of the ClapTrap
-• Energy points (10)
-• Attack damage (0)
-*/
 class ClapTrap
 {
     private:

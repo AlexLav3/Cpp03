@@ -1,6 +1,6 @@
 NAME = ScavTrap
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 SOURCES = main.cpp ClapTrap.cpp Scavtrap.cpp
 		

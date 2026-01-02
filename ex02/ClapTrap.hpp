@@ -12,11 +12,12 @@ class ClapTrap
     int hitPoints; //Aka XP
     int energyPoints;
     int attackDmg;
+    virtual const char* typeName() const; //yet again, second way of doing it (better, if u ask me)
 
     public: 
     ClapTrap();
     ClapTrap(std::string name);
-    ~ClapTrap();
+    virtual ~ClapTrap();
     ClapTrap(const ClapTrap &copy);
     ClapTrap& operator= (const ClapTrap& other);
 

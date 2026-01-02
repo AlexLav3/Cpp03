@@ -4,6 +4,10 @@
 class ScavTrap: public ClapTrap
 {
     private: 
+    
+    protected:
+
+    const char* typeName() const;
 
     public:
     ScavTrap(std::string name);
@@ -12,4 +16,5 @@ class ScavTrap: public ClapTrap
     ScavTrap& operator= (const ScavTrap& other);
 
     void guardGate();
+    //void attack(const std::string& target);
 };

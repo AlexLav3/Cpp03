@@ -9,14 +9,16 @@ class ClapTrap
 
     protected:
     std::string name; 
-    int hitPoints; //Aka XP
+    int hitPoints; 
     int energyPoints;
     int attackDmg;
+
+    virtual const char* typeName() const; //not required by subject but I think it's better. 
 
     public: 
     ClapTrap();
     ClapTrap(std::string name);
-    ~ClapTrap();
+    virtual ~ClapTrap();
     ClapTrap(const ClapTrap &copy);
     ClapTrap& operator= (const ClapTrap& other);
 
