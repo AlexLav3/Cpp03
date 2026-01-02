@@ -1,19 +1,19 @@
-Cpp03 module from 42, on inheritance
+# Cpp03 module from 42, on inheritance
 
-General Requirements: 
+### General Requirements: 
     -Wall -Werror -Wextra and -std=c++98 flags 
     -C++11 (and derived forms) and Boost libraries are forbidden.
     -using namespace and friend is not allowed
     -Orthodox Canonical Form
 
-Ex00:
+## Ex00:
 Creating the base class (ClapTrap) that the next ones will inherit from. 
 
-Ex01
+## Ex01
 Creating the ScavTrap class that inherits from ClapTrap, they need to be printing different messages from each other (constructors, attack member function and destructor) 
 Need to be able to explain why when a ScavTrap is created, the program starts by constructing a ClapTrap. Destruction occurs in reverse order. 
 
-Ex02 
+## Ex02 
 FragTrap class that inherits from ClapTrap, different messages must be displayed, as in the previous exercise. 
 Some of the attributes have different values from ClapTrap.
 
